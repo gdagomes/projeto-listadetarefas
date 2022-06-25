@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shadows Into Light', 'cursive';
+    letter-spacing: 2px;
+}
+
+body, .max-content, .input_item_lista, .header, .arealista, .itemTarefa{
+    display: flex;
+    width: 100%;
+}
+
+body{
+    background-color: #ffdacc;
+    height: 100vh;
+    justify-content: center;
+}
+
+
+.max-container, .header, .arealista{
+    flex-direction: column;
+    padding: 10px;
+}
+
+.max-container{
+    justify-content: space-around;
+    width: 70vw;
+    padding: 20px;
+
+}
+
+.header{
+    text-align: center;
+    height: 20%;
+    margin-bottom: 20px;
+}
+
+.header, .input_item_lista, .arealista{
+    justify-content: space-evenly;
+}
+
+.input_item_lista{
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+}
+
+#input_texto_tarefa{
+    flex: 70%;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+#btnInput, .buttonDelete{
+    flex: 20% ;
+}
+
+#btnInput{
+    background-color: #008c775b;
+}
+
+#btnInput:hover{
+    background-color: #008c77;
+}
+
+#btnInput, #btnDelete{
+    color:azure;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.icone{
+    flex: 5%;
+    text-align: center;
+}
+
+.itemTarefa{
+    margin-bottom: 10px;
+}
+
+.texto_item_tarefa{
+    flex: 65%;
+    padding-left: 5px ;
+    border-bottom: grey solid 1px;
+    margin-right: 5px;
+}
+
+.itemTarefaCompleta .texto_item_tarefa{
+   text-decoration: line-through;
+}
+
+#btnDelete{
+    width: 100%;
+    height: 100%;
+    background: #ff374888;
+}
+
+#btnDelete:hover{
+    background: #ff3748;
+}
+
+.mdi-checkbox-marked-circle{
+    color:#008c77;
+}
+
+.mdi-checkbox-blank-circle-outline{
+    width: 100%;
+    height: 100%;
+    align-self: center;
+}
